@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburgermenu</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('load', function () {
+
+            var button = document.getElementById('hamburger');
+            var menu = document.getElementById('menu');
+
+            button.addEventListener('click', function () {
+                menu.classList.toggle('verborgen');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="hamburger"></button>
+    <ul id="menu" class="verborgen">
+        <li><a href="home">HomePIZZA </a> </li>
+        <li><a href="about">AboutPIZZA </a> </li>
+        <li><a href="portfolio">PIZZA</a> </li>
+        <li><a href="contact">PIZZA</a></li>
+    </ul>
+
+    <h1>pizza chain</h1>
+    <p>een pizza chain waar we pizza verkopen voor weinig 
+    </p>
+
+</body>
+
+</html>

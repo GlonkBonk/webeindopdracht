@@ -1,0 +1,88 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    background-image: url("pizza3.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 10%;
+}
+
+#menu {
+    list-style: none;
+}
+
+ul {
+    width: 100%;
+}
+
+#menu li {
+    float: left;
+    width: 25%;
+    background-color: #333;
+    line-height: 100px;
+}
+
+h1, p{ 
+    color: rgb(32, 185, 12);
+    box-shadow: 20px;
+
+}
+
+#menu a,
+li {
+    display: block;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+#menu li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#hamburger {
+    margin: 10px;
+    display: none;
+}
+
+.verborgen {
+    display: inline-block;
+
+}
+
+@media screen and (max-width:680px) {
+    #hamburger {
+
+        display: block;
+        background-image: url("Hamburger_icon.svg.png");
+
+        border: none;
+        width: 100px;
+        height: 100px;
+        background-size: 100px;
+    }
+
+    .verborgen {
+        display: none;
+
+    }
+
+    #menu li {
+        width: 100%;
+        display: block;
+    }
+
+    #menu {
+        transition-duration: 3.5s;
+       
+        position: absolute;
+    }
+}
